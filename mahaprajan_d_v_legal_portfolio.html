@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahaprajan D.V | Legal Portfolio & Resume</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            800: '#0f172a',
+                            900: '#0a0f1d',
+                            950: '#050811',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#d97706',
+                            600: '#b45309',
+                            light: '#fef3c7',
+                            accent: '#c59b27'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Cinzel', 'Georgia', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fef3c7 0%, #c59b27 50%, #92400e 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-glow {
+            box-shadow: 0 0 15px rgba(197, 155, 39, 0.2);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(197, 155, 39, 0.15);
+        }
+        .glass-card-hover:hover {
+            border-color: rgba(197, 155, 39, 0.4);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 0 15px rgba(197, 155, 39, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-navy-950 text-slate-200 font-sans antialiased selection:bg-gold-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-navy-900/80 backdrop-blur-md border-b border-gold-accent/20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-gold-accent to-gold-600 flex items-center justify-center text-navy-950 font-serif font-bold text-xl shadow-lg group-hover:scale-105 transition-transform">
+                    M
+                </div>
+                <div>
+                    <span class="font-serif text-lg font-bold tracking-wider text-slate-100 block">MAHAPRAJAN D.V</span>
+                    <span class="text-xs text-gold-accent tracking-widest uppercase font-medium">B.B.A. LL.B Scholar</span>
+                </div>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="text-slate-300 hover:text-gold-accent transition-colors">About</a>
+                <a href="#skills" class="text-slate-300 hover:text-gold-accent transition-colors">Skills</a>
+                <a href="#projects" class="text-slate-300 hover:text-gold-accent transition-colors">Projects</a>
+                <a href="#resume" class="text-slate-300 hover:text-gold-accent transition-colors">Resume & Education</a>
+                <a href="#contact" class="text-slate-300 hover:text-gold-accent transition-colors">Contact</a>
+            </nav>
+
+            <!-- Actions -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="mailto:mahaprajan2005@gmail.com?subject=Request%20for%20Full%20CV%20-%20Mahaprajan%20D.V&body=Dear%20Mahaprajan,%0A%0AI%20came%20across%20your%20legal%20portfolio%20and%20would%20like%20to%20request%20a%20copy%20of%20your%20full%20CV.%0A%0ARegards," class="px-5 py-2.5 rounded-lg border border-gold-accent/40 text-gold-accent hover:bg-gold-accent hover:text-navy-950 font-semibold text-sm transition-all duration-300 flex items-center gap-2">
+                    <i data-lucide="file-text" class="w-4 h-4"></i>
+                    Request CV
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-300 hover:text-gold-accent focus:outline-none">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-navy-900 border-b border-gold-accent/20 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-slate-300 hover:text-gold-accent">About</a>
+            <a href="#skills" class="block py-2 text-slate-300 hover:text-gold-accent">Skills</a>
+            <a href="#projects" class="block py-2 text-slate-300 hover:text-gold-accent">Projects</a>
+            <a href="#resume" class="block py-2 text-slate-300 hover:text-gold-accent">Resume & Education</a>
+            <a href="#contact" class="block py-2 text-slate-300 hover:text-gold-accent">Contact</a>
+            <a href="mailto:mahaprajan2005@gmail.com?subject=Request%20for%20Full%20CV%20-%20Mahaprajan%20D.V&body=Dear%20Mahaprajan,%0A%0AI%20came%20across%20your%20legal%20portfolio%20and%20would%20like%20to%20request%20a%20copy%20of%20your%20full%20CV.%0A%0ARegards," class="block w-full mt-2 px-5 py-2.5 rounded-lg border border-gold-accent text-gold-accent text-center font-semibold">
+                Request CV
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gold-accent/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -top-20 -right-20 w-96 h-96 bg-blue-900/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Text Content -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-accent/10 border border-gold-accent/30 text-gold-accent text-xs font-semibold uppercase tracking-wider">
+                        <i data-lucide="scale" class="w-4 h-4"></i>
+                        Legal Professional & Scholar
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
+                        Mahaprajan D.V
+                    </h1>
+
+                    <p class="text-xl sm:text-2xl font-serif text-gold-accent font-medium">
+                        Aspiring Advocate & Legal Researcher
+                    </p>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl leading-relaxed mx-auto lg:mx-0">
+                        4th Year <span class="text-white font-semibold">B.B.A. LL.B</span> Scholar at <span class="text-white font-semibold">Saveetha School of Law</span> (Batch of 2028). Dedicated to legal excellence, dispute resolution, case-law analysis, and corporate legal strategy.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#projects" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-accent text-navy-950 font-bold text-base hover:shadow-lg hover:shadow-gold-500/20 hover:scale-105 transition-all text-center flex items-center justify-center gap-2">
+                            <i data-lucide="briefcase" class="w-5 h-5"></i>
+                            View Work & Projects
+                        </a>
+                        <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-navy-800 border border-slate-700 hover:border-gold-accent text-slate-200 font-semibold text-base hover:text-gold-accent transition-all text-center flex items-center justify-center gap-2">
+                            <i data-lucide="mail" class="w-5 h-5"></i>
+                            Get in Touch
+                        </a>
+                    </div>
+
+                    <!-- Quick Metadata Pills -->
+                    <div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-3 gap-4 text-left">
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 rounded-lg bg-navy-800 border border-slate-800 text-gold-accent">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Location</div>
+                                <div class="text-sm font-semibold text-slate-200">Chennai, Tamil Nadu</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="p-2.5 rounded-lg bg-navy-800 border border-slate-800 text-gold-accent">
+                                <i data-lucide="graduation-cap" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Graduation</div>
+                                <div class="text-sm font-semibold text-slate-200">2028 (4th Year)</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3 col-span-2 sm:col-span-1">
+                            <div class="p-2.5 rounded-lg bg-navy-800 border border-slate-800 text-gold-accent">
+                                <i data-lucide="building-2" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Institution</div>
+                                <div class="text-sm font-semibold text-slate-200">Saveetha Law</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Profile Photo Column -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative group max-w-sm">
+                        <!-- Framing Rings -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-gold-accent to-gold-600 rounded-2xl blur opacity-30 group-hover:opacity-70 transition duration-500"></div>
+                        <div class="relative rounded-2xl overflow-hidden border-2 border-gold-accent/40 bg-navy-900 shadow-2xl">
+                            <img src="prj.png" alt="Mahaprajan D.V - Legal Scholar" class="w-full h-[450px] object-cover object-top filter brightness-95 contrast-105 group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/400x500/0f172a/c59b27?text=Mahaprajan+D.V'">
+                            
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-navy-950 via-navy-950/80 to-transparent p-6 pt-12">
+                                <div class="flex items-center justify-between">
+                                    <div>
+                                        <h3 class="font-serif font-bold text-white text-lg">Mahaprajan D.V</h3>
+                                        <p class="text-xs text-gold-accent">Legal Advocate in Training</p>
+                                    </div>
+                                    <div class="bg-gold-accent/20 border border-gold-accent/40 rounded-full p-2 text-gold-accent">
+                                        <i data-lucide="shield-check" class="w-5 h-5"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-navy-900/50 border-y border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-gold-accent mb-2">Background & Vision</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-white">About Mahaprajan D.V</p>
+                <div class="w-20 h-1 bg-gold-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Text Narrative -->
+                <div class="lg:col-span-7 space-y-6">
+                    <h3 class="font-serif text-2xl font-bold text-slate-100">
+                        Driven by Justice, Legal Precision & Strategic Analytical Thinking
+                    </h3>
+                    <p class="text-slate-300 leading-relaxed">
+                        I am currently a 4th-year law student pursuing my integrated five-year <span class="text-gold-accent font-semibold">B.B.A. LL.B</span> degree at the prestigious <span class="text-white font-semibold">Saveetha School of Law</span>. Hailing from Tirunelveli, Tamil Nadu, my academic journey blends business administration insights with comprehensive legal methodologies.
+                    </p>
+                    <p class="text-slate-300 leading-relaxed">
+                        My primary legal focus encompasses <span class="text-slate-100 font-semibold">Alternative Dispute Resolution (ADR)</span>, <span class="text-slate-100 font-semibold">Case-Law Analysis</span>, corporate statutory compliance, and rigorous legal research. I believe that a complete understanding of statutory frameworks combined with strategic advocacy forms the backbone of effective legal practice.
+                    </p>
+
+                    <!-- Key Attributes Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+                        <div class="p-4 rounded-xl bg-navy-800/80 border border-slate-800 flex items-start gap-3">
+                            <i data-lucide="book-open" class="w-6 h-6 text-gold-accent shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Academic Rigor</h4>
+                                <p class="text-xs text-slate-400 mt-1">Focused on Constitutional, Contractual, and Corporate jurisprudence.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-navy-800/80 border border-slate-800 flex items-start gap-3">
+                            <i data-lucide="scale" class="w-6 h-6 text-gold-accent shrink-0 mt-1"></i>
+                            <div>
+                                <h4 class="font-semibold text-white text-sm">Dispute Resolution</h4>
+                                <p class="text-xs text-slate-400 mt-1">Practical simulation in mediation, negotiation, and client advocacy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Specs Card -->
+                <div class="lg:col-span-5">
+                    <div class="glass-card p-8 rounded-2xl border border-gold-accent/20 relative">
+                        <div class="absolute -top-4 -right-4 bg-gold-accent text-navy-950 text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
+                            VERIFIED STUDENT PROFILE
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i data-lucide="user-check" class="text-gold-accent"></i>
+                            Official Details
+                        </h3>
+
+                        <dl class="space-y-4 text-sm">
+                            <div class="flex justify-between pb-3 border-b border-slate-800">
+                                <dt class="text-slate-400">Full Name</dt>
+                                <dd class="font-semibold text-white">Mahaprajan D.V</dd>
+                            </div>
+
+                            <div class="flex justify-between pb-3 border-b border-slate-800">
+                                <dt class="text-slate-400">Institution</dt>
+                                <dd class="font-semibold text-white">Saveetha School of Law</dd>
+                            </div>
+
+                            <div class="flex justify-between pb-3 border-b border-slate-800">
+                                <dt class="text-slate-400">Degree Program</dt>
+                                <dd class="font-semibold text-gold-accent">B.B.A. LL.B</dd>
+                            </div>
+
+                            <div class="flex justify-between pb-3 border-b border-slate-800">
+                                <dt class="text-slate-400">Current Academic Standing</dt>
+                                <dd class="font-semibold text-white">4th Year (Senior)</dd>
+                            </div>
+
+                            <div class="flex justify-between pb-3 border-b border-slate-800">
+                                <dt class="text-slate-400">Expected Graduation</dt>
+                                <dd class="font-semibold text-white">2028</dd>
+                            </div>
+
+                            <div class="flex justify-between">
+                                <dt class="text-slate-400">Hometown Location</dt>
+                                <dd class="font-semibold text-white">Tirunelveli, Tamil Nadu</dd>
+                            </div>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Competencies Section -->
+    <section id="skills" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-gold-accent mb-2">Legal Capabilities</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-white">Skills & Practice Areas</p>
+                <div class="w-20 h-1 bg-gold-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Skills Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                <!-- Skill 1 -->
+                <div class="glass-card p-6 rounded-2xl glass-card-hover transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-gold-accent/10 border border-gold-accent/30 text-gold-accent flex items-center justify-center mb-5">
+                        <i data-lucide="search-code" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-2">Legal Research & Writing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Extensive experience researching statutory provisions, SCC Online case laws, Manupatra databases, and drafting precise legal opinions.
+                    </p>
+                    <div class="w-full bg-navy-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-gold-500 to-gold-accent h-2 rounded-full" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="glass-card p-6 rounded-2xl glass-card-hover transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-gold-accent/10 border border-gold-accent/30 text-gold-accent flex items-center justify-center mb-5">
+                        <i data-lucide="handshake" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-2">Mediation & ADR</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Skilled in dispute resolution methodologies, negotiation tactics, and collaborative client counseling mechanisms outside litigation.
+                    </p>
+                    <div class="w-full bg-navy-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-gold-500 to-gold-accent h-2 rounded-full" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="glass-card p-6 rounded-2xl glass-card-hover transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-gold-accent/10 border border-gold-accent/30 text-gold-accent flex items-center justify-center mb-5">
+                        <i data-lucide="file-text" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-2">Statutory Interpretation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Deep analysis of legislative intents, judicial precedents, constitutional law doctrines, and statutory provisions analysis.
+                    </p>
+                    <div class="w-full bg-navy-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-gold-500 to-gold-accent h-2 rounded-full" style="width: 88%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="glass-card p-6 rounded-2xl glass-card-hover transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-gold-accent/10 border border-gold-accent/30 text-gold-accent flex items-center justify-center mb-5">
+                        <i data-lucide="building" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-2">Corporate & Business Law</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Blending B.B.A coursework with LL.B to understand corporate governance, company laws, contract formation, and commercial ethics.
+                    </p>
+                    <div class="w-full bg-navy-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-gold-500 to-gold-accent h-2 rounded-full" style="width: 82%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 5 -->
+                <div class="glass-card p-6 rounded-2xl glass-card-hover transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-gold-accent/10 border border-gold-accent/30 text-gold-accent flex items-center justify-center mb-5">
+                        <i data-lucide="gavel" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-2">Legal Drafting & Mooting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Proficient in structuring legal notices, affidavits, contract agreements, and presenting oral arguments in moot scenarios.
+                    </p>
+                    <div class="w-full bg-navy-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-gold-500 to-gold-accent h-2 rounded-full" style="width: 86%;"></div>
+                    </div>
+                </div>
+
+                <!-- Skill 6 -->
+                <div class="glass-card p-6 rounded-2xl glass-card-hover transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-gold-accent/10 border border-gold-accent/30 text-gold-accent flex items-center justify-center mb-5">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="font-serif text-lg font-bold text-white mb-2">Client Counseling</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-4">
+                        Synthesizing complex legal jargon into actionable advice for individuals and corporate entities with empathy and clarity.
+                    </p>
+                    <div class="w-full bg-navy-800 rounded-full h-2 overflow-hidden">
+                        <div class="bg-gradient-to-r from-gold-500 to-gold-accent h-2 rounded-full" style="width: 84%;"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-navy-900/50 border-y border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-gold-accent mb-2">Case Work & Projects</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-white">Academic Legal Works</p>
+                <div class="w-20 h-1 bg-gold-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between glass-card-hover transition-all">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gold-accent/10 text-gold-accent border border-gold-accent/30">
+                                ADR & Mediation
+                            </span>
+                            <span class="text-xs text-slate-400">Saveetha Law</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-white mb-3">
+                            Mediation & Dispute Resolution Simulation Project
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Comprehensive practical research project analyzing pre-litigation mediation strategies in commercial disputes. Implemented settlement negotiation frameworks and interest-based bargaining.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[11px] bg-navy-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Arbitration</span>
+                            <span class="text-[11px] bg-navy-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Negotiation</span>
+                            <span class="text-[11px] bg-navy-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Drafting</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-navy-950/60 border-t border-slate-800/80 flex items-center justify-between">
+                        <button onclick="openProjectModal('Mediation & Dispute Resolution', 'Detailed analysis on ADR frameworks, procedural rules under the Arbitration and Conciliation Act, and simulated client representation models.')" class="text-gold-accent text-xs font-semibold hover:underline flex items-center gap-1">
+                            Read Project Brief <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between glass-card-hover transition-all">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gold-accent/10 text-gold-accent border border-gold-accent/30">
+                                Jurisprudence
+                            </span>
+                            <span class="text-xs text-slate-400">Case-Law Analysis</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-white mb-3">
+                            Constitutional & Corporate Precedent Case Analysis
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            In-depth case studies examining landmark Supreme Court and High Court verdicts. Evaluated judicial reasoning, ratio decidendi, obiter dicta, and statutory amendments.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[11px] bg-navy-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Case Law</span>
+                            <span class="text-[11px] bg-navy-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Ratio Decidendi</span>
+                            <span class="text-[11px] bg-navy-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Research</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-navy-950/60 border-t border-slate-800/80 flex items-center justify-between">
+                        <button onclick="openProjectModal('Case Precedent Analysis', 'Systematic breakdown of corporate governance judgments, constitutional rights interpretation, and statutory compliance cases.')" class="text-gold-accent text-xs font-semibold hover:underline flex items-center gap-1">
+                            Read Project Brief <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 flex flex-col justify-between glass-card-hover transition-all">
+                    <div class="p-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gold-accent/10 text-gold-accent border border-gold-accent/30">
+                                Drafting & Contracts
+                            </span>
+                            <span class="text-xs text-slate-400">Legal Portfolio</span>
+                        </div>
+                        <h3 class="font-serif text-xl font-bold text-white mb-3">
+                            Legal Memorandum & Commercial Drafting Compendium
+                        </h3>
+                        <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                            Formulated mock corporate contracts, indemnity bonds, non-disclosure agreements, and structured legal opinions tailored for business clients.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="text-[11px] bg-navy-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Contracts</span>
+                            <span class="text-[11px] bg-navy-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Drafting</span>
+                            <span class="text-[11px] bg-navy-800 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700">Compliance</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-navy-950/60 border-t border-slate-800/80 flex items-center justify-between">
+                        <button onclick="openProjectModal('Drafting Compendium', 'Collection of structured agreements, legal notices, and research notes created as part of the B.B.A LL.B legal writing curriculum.')" class="text-gold-accent text-xs font-semibold hover:underline flex items-center gap-1">
+                            Read Project Brief <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume, Education & Achievements Section -->
+    <section id="resume" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-gold-accent mb-2">Qualifications & Path</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-white">Education & Credentials</p>
+                <div class="w-20 h-1 bg-gold-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+                <!-- Education Timeline -->
+                <div class="lg:col-span-6 space-y-6">
+                    <h3 class="font-serif text-2xl font-bold text-white flex items-center gap-3">
+                        <i data-lucide="graduation-cap" class="text-gold-accent"></i>
+                        Education Journey
+                    </h3>
+
+                    <div class="relative pl-6 border-l-2 border-gold-accent/30 space-y-8">
+                        
+                        <!-- Timeline Item 1 -->
+                        <div class="relative group">
+                            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-gold-accent border-4 border-navy-950"></div>
+                            <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                                <span class="text-xs text-gold-accent font-semibold tracking-wider">2024 - 2028 (EXPECTED)</span>
+                                <h4 class="font-serif text-xl font-bold text-white mt-1">B.B.A. LL.B (5-Year Integrated Degree)</h4>
+                                <p class="text-slate-300 font-medium text-sm">Saveetha School of Law, Chennai</p>
+                                <p class="text-slate-400 text-xs mt-3 leading-relaxed">
+                                    Currently in 4th Year. Coursework combines business administration with core law disciplines including Business Law, Constitutional Law, Criminal Law, Corporate Law, and ADR.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="relative group">
+                            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-600 border-4 border-navy-950"></div>
+                            <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                                <span class="text-xs text-slate-400 font-semibold tracking-wider">TIRUNELVELI, TAMIL NADU</span>
+                                <h4 class="font-serif text-lg font-bold text-white mt-1">Higher Secondary Legal Foundation</h4>
+                                <p class="text-slate-400 text-xs mt-2">
+                                    Strong academic background in business and humanities leading into integrated legal studies.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Interactive Placeholder Cards for Future Internships & Certificates -->
+                <div class="lg:col-span-6 space-y-6">
+                    <h3 class="font-serif text-2xl font-bold text-white flex items-center gap-3">
+                        <i data-lucide="award" class="text-gold-accent"></i>
+                        Internships & Certificates
+                    </h3>
+
+                    <!-- Internships Module -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="font-serif text-lg font-bold text-white flex items-center gap-2">
+                                <i data-lucide="briefcase" class="w-5 h-5 text-gold-accent"></i>
+                                Internship Experience
+                            </h4>
+                            <span class="text-xs text-slate-400 bg-navy-800 px-2.5 py-1 rounded border border-slate-700">Upcoming / Updating</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Mahaprajan is actively preparing for senior chamber internships and judicial clerkship opportunities. 
+                        </p>
+                        <button onclick="openModal('add-details-modal')" class="mt-4 text-xs text-gold-accent font-semibold hover:underline flex items-center gap-1">
+                            <i data-lucide="plus-circle" class="w-4 h-4"></i> Add / Request Detailed Internship Log
+                        </button>
+                    </div>
+
+                    <!-- Certificates Module -->
+                    <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                        <div class="flex items-center justify-between mb-4">
+                            <h4 class="font-serif text-lg font-bold text-white flex items-center gap-2">
+                                <i data-lucide="file-check" class="w-5 h-5 text-gold-accent"></i>
+                                Certificates & Achievements
+                            </h4>
+                            <span class="text-xs text-slate-400 bg-navy-800 px-2.5 py-1 rounded border border-slate-700">Pending Sync</span>
+                        </div>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Moot court participations, mediation workshops, legal research certificates, and academic achievements can be easily uploaded and viewed here.
+                        </p>
+                        <button onclick="openModal('add-details-modal')" class="mt-4 text-xs text-gold-accent font-semibold hover:underline flex items-center gap-1">
+                            <i data-lucide="upload-cloud" class="w-4 h-4"></i> Upload Certificate Documents
+                        </button>
+                    </div>
+
+                    <!-- Download CV CTA Banner -->
+                    <div class="p-6 rounded-2xl bg-gradient-to-r from-gold-accent/20 via-navy-800 to-navy-900 border border-gold-accent/40 flex items-center justify-between">
+                        <div>
+                            <h4 class="font-serif font-bold text-white text-base">Need a Full Resume?</h4>
+                            <p class="text-xs text-slate-300 mt-1">Request an official PDF copy directly via email.</p>
+                        </div>
+                        <a href="mailto:mahaprajan2005@gmail.com?subject=Request%20for%20Full%20CV%20-%20Mahaprajan%20D.V&body=Dear%20Mahaprajan,%0A%0AI%20came%20across%20your%20legal%20portfolio%20and%20would%20like%20to%20request%20a%20copy%20of%20your%20full%20CV.%0A%0ARegards," class="px-4 py-2.5 rounded-xl bg-gold-accent text-navy-950 font-bold text-xs hover:bg-gold-500 transition-all flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4"></i> Request CV
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-navy-900/50 border-t border-slate-800/60 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-semibold uppercase tracking-widest text-gold-accent mb-2">Connect With Mahaprajan</h2>
+                <p class="font-serif text-3xl sm:text-4xl font-bold text-white">Contact & Professional Inquiry</p>
+                <div class="w-20 h-1 bg-gold-accent mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+
+                <!-- Contact Information -->
+                <div class="lg:col-span-5 space-y-6">
+                    <h3 class="font-serif text-2xl font-bold text-white">Let's Discuss Legal Opportunities</h3>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Open for senior chamber internships, legal research collaborations, moot court partnerships, and academic discussions.
+                    </p>
+
+                    <div class="space-y-4 pt-4">
+
+                        <!-- Email -->
+                        <div class="glass-card p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-3 rounded-lg bg-gold-accent/10 text-gold-accent">
+                                    <i data-lucide="mail" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Email Address</div>
+                                    <a href="mailto:mahaprajan2005@gmail.com" class="text-sm font-semibold text-white hover:text-gold-accent transition-colors">
+                                        mahaprajan2005@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+                            <button onclick="copyToClipboard('mahaprajan2005@gmail.com', 'Email copied!')" class="p-2 text-slate-400 hover:text-gold-accent" title="Copy Email">
+                                <i data-lucide="copy" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="glass-card p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-3 rounded-lg bg-gold-accent/10 text-gold-accent">
+                                    <i data-lucide="phone" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">Phone / WhatsApp</div>
+                                    <a href="tel:+919043750979" class="text-sm font-semibold text-white hover:text-gold-accent transition-colors">
+                                        +91 9043750979
+                                    </a>
+                                </div>
+                            </div>
+                            <button onclick="copyToClipboard('+919043750979', 'Phone number copied!')" class="p-2 text-slate-400 hover:text-gold-accent" title="Copy Phone">
+                                <i data-lucide="copy" class="w-4 h-4"></i>
+                            </button>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="glass-card p-4 rounded-xl border border-slate-800 flex items-center gap-3">
+                            <div class="p-3 rounded-lg bg-gold-accent/10 text-gold-accent">
+                                <i data-lucide="map-pin" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <div class="text-xs text-slate-400">Current Base</div>
+                                <div class="text-sm font-semibold text-white">Chennai, Tamil Nadu</div>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn Placeholder -->
+                        <div class="glass-card p-4 rounded-xl border border-slate-800 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="p-3 rounded-lg bg-gold-accent/10 text-gold-accent">
+                                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-slate-400">LinkedIn Profile</div>
+                                    <div class="text-sm font-semibold text-white">Mahaprajan D.V</div>
+                                </div>
+                            </div>
+                            <a href="https://linkedin.com" target="_blank" class="px-3 py-1 rounded bg-navy-800 text-xs font-semibold text-gold-accent hover:bg-gold-accent hover:text-navy-950 transition-all">
+                                Connect
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Formspree Direct Email Contact Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 rounded-2xl border border-slate-800 relative">
+                        <h3 class="font-serif text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i data-lucide="send" class="text-gold-accent w-5 h-5"></i>
+                            Send Direct Message
+                        </h3>
+
+                        <!-- Formspree Endpoint targeting mahaprajan2005@gmail.com -->
+                        <form id="contact-form" action="https://formspree.io/f/mbglkonp" method="POST" class="space-y-4">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-1">Your Full Name *</label>
+                                    <input type="text" name="name" required placeholder="Adv. Ramesh Kumar" class="w-full px-4 py-3 rounded-xl bg-navy-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-gold-accent transition-colors text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-1">Your Email Address *</label>
+                                    <input type="email" name="_replyto" required placeholder="ramesh@lawfirm.com" class="w-full px-4 py-3 rounded-xl bg-navy-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-gold-accent transition-colors text-sm">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-1">Subject</label>
+                                <input type="text" name="_subject" placeholder="Internship Opportunity / Case Consultation" class="w-full px-4 py-3 rounded-xl bg-navy-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-gold-accent transition-colors text-sm">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-1">Message *</label>
+                                <textarea name="message" rows="4" required placeholder="Write your message or inquiry here..." class="w-full px-4 py-3 rounded-xl bg-navy-950/80 border border-slate-800 text-white placeholder-slate-600 focus:outline-none focus:border-gold-accent transition-colors text-sm resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-gold-500 to-gold-accent text-navy-950 font-bold text-sm hover:scale-[1.01] transition-transform flex items-center justify-center gap-2 shadow-lg">
+                                <i data-lucide="send" class="w-4 h-4"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 border-t border-slate-800/80 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <span class="font-serif text-lg font-bold text-white tracking-wide">MAHAPRAJAN D.V</span>
+                    <p class="text-xs text-slate-400 mt-1">B.B.A. LL.B Scholar | Saveetha School of Law (Batch of 2028)</p>
+                </div>
+
+                <div class="flex items-center gap-6 text-xs text-slate-400">
+                    <a href="#about" class="hover:text-gold-accent">About</a>
+                    <a href="#skills" class="hover:text-gold-accent">Skills</a>
+                    <a href="#projects" class="hover:text-gold-accent">Projects</a>
+                    <a href="#resume" class="hover:text-gold-accent">Resume</a>
+                    <a href="#contact" class="hover:text-gold-accent">Contact</a>
+                </div>
+
+                <div class="text-xs text-slate-400 text-center md:text-right">
+                    © 2026 Mahaprajan D.V. All rights reserved.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Generic Details Upload/Add Modal -->
+    <div id="add-details-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-card max-w-md w-full rounded-2xl border border-gold-accent/40 p-6 relative">
+            <button onclick="closeModal('add-details-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <h3 class="font-serif text-xl font-bold text-white mb-2">Update Credentials</h3>
+            <p class="text-xs text-slate-400 mb-6">Mahaprajan can add new internships, certificates, or awards to this live portfolio at any time.</p>
+
+            <div class="space-y-3">
+                <input type="text" placeholder="Title (e.g. High Court Internship)" class="w-full px-4 py-2.5 rounded-xl bg-navy-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-gold-accent">
+                <textarea placeholder="Description or Details..." rows="3" class="w-full px-4 py-2.5 rounded-xl bg-navy-950 border border-slate-800 text-sm text-white focus:outline-none focus:border-gold-accent resize-none"></textarea>
+            </div>
+
+            <div class="mt-6 flex justify-end gap-3">
+                <button onclick="closeModal('add-details-modal')" class="px-4 py-2 rounded-lg bg-navy-800 text-slate-300 text-xs">Cancel</button>
+                <button onclick="alert('Details saved locally in preview!'); closeModal('add-details-modal');" class="px-4 py-2 rounded-lg bg-gold-accent text-navy-950 text-xs font-bold">Save Update</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Brief Modal -->
+    <div id="project-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm flex items-center justify-center p-4">
+        <div class="glass-card max-w-lg w-full rounded-2xl border border-gold-accent/40 p-6 relative">
+            <button onclick="closeModal('project-modal')" class="absolute top-4 right-4 text-slate-400 hover:text-white">
+                <i data-lucide="x" class="w-6 h-6"></i>
+            </button>
+
+            <h3 id="project-modal-title" class="font-serif text-xl font-bold text-white mb-3"></h3>
+            <p id="project-modal-desc" class="text-xs text-slate-300 leading-relaxed mb-6"></p>
+
+            <div class="flex justify-end">
+                <button onclick="closeModal('project-modal')" class="px-5 py-2 rounded-lg bg-gold-accent text-navy-950 text-xs font-bold">Close Overview</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 hidden bg-gold-accent text-navy-950 font-semibold px-5 py-3 rounded-xl shadow-2xl text-xs flex items-center gap-2">
+        <i data-lucide="check-circle" class="w-4 h-4"></i>
+        <span id="toast-msg">Copied to clipboard!</span>
+    </div>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Modal Handlers
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+        }
+
+        function openProjectModal(title, desc) {
+            document.getElementById('project-modal-title').innerText = title;
+            document.getElementById('project-modal-desc').innerText = desc;
+            openModal('project-modal');
+        }
+
+        // Copy to Clipboard Utility
+        function copyToClipboard(text, message) {
+            const tempInput = document.createElement('input');
+            tempInput.value = text;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            showToast(message || 'Copied to clipboard!');
+        }
+
+        // Toast Handler
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toast-msg');
+            toastMsg.innerText = msg;
+            toast.classList.remove('hidden');
+
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
